@@ -2,13 +2,17 @@
 Feature: Reset functionality on login page of Application 
 
 ##テストシナリオの内容
-Scenario: Verification of Reset button 
+Scenario Outline: Verification of Reset button 
 
 ##前提条件
-Given Open the Firefox and launch the application			
+Given Open the Chrome and launch the application			
 
 ##アクション
-When Enter the Username and Password			
+When Enter the Username <username>and Password <password>
 
 ##予測される結果を記入
 Then Reset the credential
+
+Examples:                      		
+|username  |password         |
+|User01    |password01       |
