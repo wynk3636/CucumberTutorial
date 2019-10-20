@@ -31,6 +31,7 @@ public class Step {
 	
 	/*
 	 * 何故か文字列を引数として認識しない
+	 * https://github.com/cucumber/cucumber-jvm/issues/272
 	 */
 	//@When("^Enter the Username User(\\d+)and Password password(\\d+)$")
     @When("^Enter the Username \"([^\"]*)\" and Password \"([^\"]*)\"$")				
